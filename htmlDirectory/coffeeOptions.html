@@ -1,0 +1,132 @@
+<!-- This is a general and reusable testing webb page; it was made to be the base for all future web pages-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <style>
+        .active {
+            background-color: #111111;
+        }
+    </style>
+    <head>
+        <title> DejaBrew Options</title> <!-- Change Tab Tag Display in Search Engine Here-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1" >
+        <link rel="icon" type="image/x-icon" href="../images/icon-coffee-1.ico" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../styles/defualt.css">
+       
+    </head>
+    <body>
+        <header style="background-image: url('../images/coffee-background.jpg');"> 
+            <h2> DEJABREW OPTIONS </h2> <!--Change Name of Title to reflect Menu Option-->
+        </header>
+
+        <!-- Navigation Bar for the Web Page -->
+        <div class="topnav" id="myTopnav">
+            <a href="home.html"> Home <i class="fa fa-caret-right"></i></a>  <!-- Dont forget to change the active tab and the href value -->
+            <div class="dropdown">
+              <button class="dropbtn"> Coffee Options 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="coffeeOptions.html#espresso"> Espresso <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#americano"> Americano <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#latte"> Latte <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#macchiato"> Macchiato  <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#mocha"> Mocha  <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#addins"> ADD-INS <i class="fa fa-caret-right"></i></a>
+
+              </div>
+            </div>
+            <a href="contact.html">Contact <i class="fa fa-caret-right"></i></a>
+            <a href="#about">About <i class="fa fa-caret-right"></i></a>
+            <!--<a href="#"> MORE MENU OPTIONS <i class="fa fa-caret-right"></i></a>-->
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+        </script>
+        
+    <!-- New Information Here-->
+   
+    <header style="opacity: 0.7; padding: 3px;"> 
+      <h5 id="espresso">  ESPRESSO </h5> <!--Change Name of Title to reflect Menu Option-->
+    </header>
+    <article>
+      <span style="float:left;"> Single Shot </span> <span style="float: right;"> $1.25 </span><br>
+      <span style="float:left;"> Double Shot </span> <span style="float: right;"> $2.50 </span> <br>
+      <span style="float:left;"> Brown Sugar Oat Milk Shaken Espresso </span> <span style="float: right;"> $3.00</span> <br> <br>
+    </article> <!--Start information here-->
+    
+
+    <header style="opacity: 0.7; padding: 3px;"> 
+      <h5 id="americano"> AMERICANO </h5> <!--Change Name of Title to reflect Menu Option-->
+    </header>
+    <article> 
+      <span style="float:left;"> Iced Americano </span><span style="float: right;"> $2.50 </span><br>
+      <span style="float:left;"> Hot Americano </span><span style="float: right;"> $2.50 </span><br>
+    </article> <!--Start information here-->
+
+
+    <header style="opacity: 0.7; padding: 3px;"> 
+      <h5 id="latte"> LATTE </h5> <!--Change Name of Title to reflect Menu Option-->
+    </header>
+    <article> 
+      <span style="float:left;"> Pumpkin Spice Latte </span> <span style="float: right;"> $3.00 </span><br>
+      <span style="float:left;"> Coconut Milk Latte </span> <span style="float: right;"> $3.00 </span><br>
+    </article> <!--Start information here-->
+
+
+    <header style="opacity: 0.7; padding: 3px;"> 
+      <h5 id="macchiato">  MACCHIATO  </h5> <!--Change Name of Title to reflect Menu Option-->
+    </header>
+    <article> 
+      <span style="float:left;"> Caramel Macchiato </span> <span style="float: right;"> $3.00 </span><br>
+    </article> <!--Start information here-->
+
+    <header style="opacity: 0.7; padding: 3px;"> <!-- color: #592906 -->
+      <h5 id="mocha">  MOCHA  </h5> <!--Change Name of Title to reflect Menu Option-->
+    </header>
+    <article>
+      <span style="float:left;"> WORDS WORDS WORDS </span> <span style="float: right;">  </span> <br>
+    </article> <!--Start information here-->
+
+
+    <header style="opacity: 0.7; padding: 3px;"> 
+      <h5 id="addins">  ADD-INS  </h5> <!--Change Name of Title to reflect Menu Option-->
+    </header>
+    <article> 
+      Milks <br>
+      <span style="float:left;"> &nbsp Whole Milk </span> <span style="float: right;"> $0.25 </span><br>
+      <span style="float:left;"> &nbsp 2% Milk </span> <span style="float: right;"> $0.25 </span><br> 
+      <span style="float:left;"> &nbsp Skim Milk </span> <span style="float: right;">$0.25 </span><br> 
+      <span style="float:left;"> &nbsp Oat Milk </span> <span style="float: right;"> $0.25 </span><br>
+      <span style="float:left;"> &nbsp Coconut Milk </span> <br> <span style="float: right;"> $0.25 </span><br>
+      Syrups <br>
+      <span style="float:left;"> &nbsp Vanilla Syrup </span> <span style="float: right;"> $0.25 </span><br> 
+      <span style="float:left;"> &nbsp Pumpkin Spice Syrup </span> <span style="float: right;"> $0.25</span><br> <br>
+      Sauces and Toppings <br>
+      <span style="float:left;"> &nbsp Caramel Sauce </span> <span style="float: right;"> $0.25 </span><br>
+      <span style="float:left;"> &nbsp Chocolate Sauce </span> <span style="float: right;"> $0.25 </span><br>
+      <span style="float:left;"> &nbsp Chocolate Chips </span> <span style="float: right;"> $0.25 </span><br><br>
+      Other Add-Ins <br>
+      <span style="float:left;"> &nbsp Brown Sugar </span> <span style="float: right;"> $0.25 </span><br>
+      <span style="float:left;"> &nbsp Whipped Cream </span> <span style="float: right;"> $0.25 </span><br> 
+      <span style="float:left;"> &nbsp Pumpkin Pie Spice </span> <span style="float: right;"> $0.25 </span><br><br>
+    </article> <!--Start information here-->
+
+  </body>
+  <footer>Follow us on 
+    <a href="" target="_blank" style="color: white;"> Instagram! </a>
+    <br>
+    <a href="" target="_blank"> 
+    <img src="../images/instagramLogo.png" alt="Instagram Logo" style="width: 35px; height: 35px;"></a>
+  </footer>
+    
+</html> 

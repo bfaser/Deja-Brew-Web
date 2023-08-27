@@ -1,0 +1,65 @@
+<!-- This is a general and reusable testing webb page; it was made to be the base for all future web pages-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <style>
+        .active {
+            background-color: #111111;
+        }
+    </style>
+    <head>
+        <title> Checkout</title> <!-- Change Tab Tag Display in Search Engine Here-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1" >
+        <link rel="icon" type="image/x-icon" href="../images/icon-coffee-1.ico" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../styles/defualt.css">
+       
+    </head>
+    <body>
+        <header style="background-color: #6D4C41; background-image: none;"> 
+            <h2> Checkout </h2> <!--Change Name of Title to reflect Menu Option-->
+        </header>
+
+        <!-- Navigation Bar for the Web Page -->
+        <div class="topnav" id="myTopnav">
+            <a href="home.html"> Home <i class="fa fa-caret-right"></i></a>  <!-- Dont forget to change the active tab and the href value -->
+            <div class="dropdown">
+              <button class="dropbtn"> Coffee Options 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="coffeeOptions.html#espresso"> Espresso <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#americano"> Americano <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#latte"> Latte <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#macchiato"> Macchiato  <i class="fa fa-caret-right"></i></a>
+                <a href="coffeeOptions.html#mocha"> Mocha  <i class="fa fa-caret-right"></i></a>
+              </div>
+            </div>
+            <a href="contact.html">Contact <i class="fa fa-caret-right"></i></a>
+            <a href="#about">About <i class="fa fa-caret-right"></i></a>
+            <!--<a href="#news"> MORE MENU OPTIONS <i class="fa fa-caret-right"></i></a>-->
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+        </script>
+        
+    <!-- New Information Here-->
+
+
+    <section> Check out here with paypall or cash </section> <!--Start information here-->
+    </body>
+    <footer>Follow us on 
+      <a href="" target="_blank" style="color: white;"> Instagram! </a>
+      <br>
+      <a href="" target="_blank"> 
+      <img src="../images/instagramLogo.png" alt="Instagram Logo" style="width: 35px; height: 35px;"></a>
+    </footer>
+</html> 
