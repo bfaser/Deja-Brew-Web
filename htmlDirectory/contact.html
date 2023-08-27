@@ -1,6 +1,13 @@
 <!-- This is a general and reusable testing webb page; it was made to be the base for all future web pages-->
 <!DOCTYPE html>
 <html lang="en-US">
+    <script>
+      function openPhp(file) {
+        open(file);
+      }
+
+
+    </script>
     <style>
         .active {
             background-color: #111111;
@@ -54,9 +61,8 @@
     <!-- New Information Here-->
 
 
-    <section> Fill Out a Feedback Form 
-      <a href="../phpDirectory/reviewPage.php" hreflang="php"> Here </a>
-
+    <section> Fill Out a Feedback Form Here </a>
+      <button action="openPhp(../phpDirectory/reviewPage.php)"> </button>
     </section> <!--Start information here-->
     </body>
     <footer>Follow us on 
